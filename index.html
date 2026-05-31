@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mechanical Engineering Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f2937, #2563eb);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background: #111827;
+      padding: 14px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    section {
+      max-width: 1050px;
+      margin: 40px auto;
+      background: white;
+      padding: 38px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #1d4ed8;
+      margin-bottom: 18px;
+      border-left: 5px solid #2563eb;
+      padding-left: 12px;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 16px;
+      border: 1px solid rgba(255,255,255,0.7);
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #eff6ff;
+      padding: 22px;
+      border-radius: 14px;
+      border: 1px solid #bfdbfe;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(37, 99, 235, 0.18);
+    }
+
+    .card h3 {
+      color: #1e40af;
+      margin-bottom: 10px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e3a8a;
+      padding: 9px 14px;
+      margin: 6px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .goal-box {
+      background: #f8fafc;
+      border-left: 5px solid #0f766e;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    button {
+      margin-top: 18px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px;
+      background: #111827;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      section {
+        margin: 24px 14px;
+        padding: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mechanical Engineering Portfolio</h1>
+    <p>
+      안녕하세요. 저는 기계공학을 전공하고 있는 학생입니다.<br />
+      기계 설계, 3D 모델링, 제조 공정, 자동화 시스템에 관심을 가지고 있습니다.
+    </p >
+    <div class="hero-tag">Vibe Coding Homepage Project</div>
+  </header>
+
+  <nav>
+    <a href=" ">About</a >
+    <a href="#skills">Skills</a >
+    <a href="#projects">Projects</a >
+    <a href="#goal">Goal</a >
+    <a href="#contact">Contact</a >
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      저는 기계공학 전공 학생으로서 기초 역학, 재료역학, CAD 설계, 제조 공정 등에 대해 학습하고 있습니다.
+      특히 기계 시스템의 구조를 이해하고, 더 효율적이고 안전한 설계 방법을 고민하는 것에 관심이 있습니다.
+      앞으로 전공 지식을 바탕으로 실제 산업 현장에서 문제를 해결할 수 있는 엔지니어로 성장하고 싶습니다.
+    </p >
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>CAD 설계</span>
+      <span>3D 모델링</span>
+      <span>기초 역학</span>
+      <span>재료역학</span>
+      <span>제조 공정</span>
+      <span>문제 해결 능력</span>
+      <span>자동화 시스템 이해</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>3D CAD 모델링</h3>
+        <p>
+          기계 부품의 구조를 3D로 모델링하고, 부품 간 조립 관계를 이해하는 프로젝트입니다.
+        </p >
+      </div>
+      <div class="card">
+        <h3>기계 구조 분석</h3>
+        <p>
+          하중이 작용하는 구조물의 응력과 변형을 계산하며 안정성을 검토하는 학습 프로젝트입니다.
+        </p >
+      </div>
+      <div class="card">
+        <h3>자동화 시스템 아이디어</h3>
+        <p>
+          센서와 제어 시스템을 활용하여 작업 효율을 높일 수 있는 자동화 장치를 구상했습니다.
+        </p >
+      </div>
+    </div>
+  </section>
+
+  <section id="goal">
+    <h2>Future Goal</h2>
+    <div class="goal-box">
+      앞으로 기계 설계와 자동화 분야의 전문성을 키워 실제 산업 현장에서 활용할 수 있는 기술을 개발하는 엔지니어가 되고 싶습니다.
+      단순히 이론을 배우는 것에 그치지 않고, 직접 설계하고 실험하며 문제를 해결하는 능력을 계속 발전시키고 싶습니다.
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Name:</strong> 왕일항</p >
+    <p><strong>Email:</strong> a2629492403@gmail.com</p >
+    <p><strong>Major:</strong> Mechanical Engineering</p >
+    <button onclick="showMessage()">인사 메시지 보기</button>
+  </section>
+
+  <footer>
+    <p>© 2026 Mechanical Engineering Portfolio. All Rights Reserved.</p >
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert('방문해 주셔서 감사합니다!');
+    }
+  </script>
+</body>
+</html>
